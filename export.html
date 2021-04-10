@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>export A Bookmark</title>
+	<export-link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+
+<style type="text/css">
+	
+@export url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: rgb(246,0,0);
+background: linear-gradient(90deg, rgba(246,0,0,1) 50%, rgba(0,232,255,1) 54%);
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.export-section{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.export-section h1{
+	color: #fff;
+	text-align: center;
+	font-size: 50px;
+
+}
+
+.export-post {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.export-link {
+  font-size: 20px;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 10%;
+  outline: none;
+  color: crimson
+
+
+}
+.export-link:focus{
+  color: crimson;
+}
+
+.export-postButton {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #00B4CC;
+  background: crimson;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 40px;
+}
+.export-postButton:hover{
+	background: black;
+}
+.export-postButton i{
+	padding: 10px;
+	color: #fff;
+}
+
+#export-lower{
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+.back a{
+    text-decoration: none;
+    display: inline-block;
+    background: black;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 200;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.back a:hover{
+    color: #fff;
+    background: none;
+}
+
+
+/* responsive media query start */
+
+@media (max-width: 1000px) {
+    .export-section h1{
+    color: #fff;
+	text-align: center;
+	font-size: 40px;
+
+}
+@media (max-width: 800px) {
+
+    .export-section h1{
+    color: #fff;
+	text-align: center;
+	font-size: 25px;
+
+}
+
+        
+ 
+}
+
+</style>
+</head>
+<body>
+
+<div class="export-section">
+	<h1>Paste the Copied export-link</h1>
+
+   <div class="export-post">
+      <input type="text" class="export-link" placeholder="Paste the Copied export-link">
+      <div class="export-postButton">
+      	<a href="login.html"><i class="fa fa-angle-double-down"></i></a>
+    	</div>
+    </div>
+	<div id="export-lower">we are your choice</div>
+  <center>
+<div class="back">
+<a href="index.html">Back to Home</a>
+</div>
+</center>
+</div>
+
+</body>
+</html>
