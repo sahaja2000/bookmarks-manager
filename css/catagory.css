@@ -82,29 +82,26 @@ nav ul .nav-btn a:hover{
   display: none;
 }
 
-/* Home  */
-
-
+/* Banner  */
 
 section{
   padding: 0;
 }
 .home{
   display: flex;
-  background: url("../img/bg.jpg") no-repeat center;
+  background: url("../img/catagory.jpg") no-repeat center;
   height:100vh ;
   color: #fff;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+  justify-content: center;
+  text-align: center;
   
 }
 .home .max-width{
   margin: auto 0 auto 30px;
-}
-.home .home-content .text-1{
-  font-size: 27px;
 }
 .home .home-content .text-2{
   font-size: 75px;
@@ -148,14 +145,11 @@ section{
   transition: all 0.3s ease;
 }
 .home-content .read-more a:hover{
-  color: crimson;
-  background: none;
+  color: rgb(255, 255, 255);
+  background:#000;
 }
-.home-content .delabook a:hover{
-  color: crimson;
-  background: none;
-}
-/* start content */
+
+/* start catagory  content */
 
 .container{
   height: auto;
@@ -164,132 +158,73 @@ section{
   z-index: 0;
 }
 
-.create-content .title{
-  font-size: 35px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 100px;
-  color: #fff;
-  user-select: none;
-  padding: 20px;
-}
-.wrapper{
-  width: 380px;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
-}
-.wrapper .title{
-  font-size: 35px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 100px;
-  color: #fff;
-  user-select: none;
-  border-radius: 15px 15px 0 0;
-  background: crimson;
-}
-.wrapper form{
-  padding: 10px 30px 50px 30px;
-}
-.wrapper form .field{
-  height: 50px;
-  width: 100%;
-  margin-top: 20px;
-  position: relative;
-  
-}
-.wrapper form .field input{
-  display: block;
 
-  height: 100%;
+.catagory-section{
+  background: url(../img/catagory1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 60px 0;
+}
+.inner-width{
   width: 100%;
-  outline: none;
-  font-size: 17px;
-  padding-left: 20px;
-  border: 1px solid lightgrey;
-  border-radius: 25px;
-  transition: all 0.3s ease;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
 }
-.wrapper form .field input:focus,
-form .field input:valid{
-  border-color: crimson;
+.section-title{
+  text-align: center;
+  color: #ddd;
+  font-size: 30px;
 }
-.wrapper form .field label{
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  color: #999999;
-  font-weight: 400;
-  font-size: 17px;
-  pointer-events: none;
-  transform: translateY(-50%);
-  transition: all 0.3s ease;
+.border{
+  width: 160px;
+  height: 2px;
+  background: crimson;
+  margin: 40px auto;
 }
-form .field input:focus ~ label,
-form .field input:valid ~ label{
-  top: 0%;
-  font-size: 16px;
-  color: #4158d0;
-  background: #fff;
-  transform: translateY(-50%);
-}
-form .content{
+.catagory-container{
   display: flex;
-  width: 100%;
-  height: 50px;
-  font-size: 16px;
-  align-items: center;
-  justify-content: space-around;
-}
-form .content .checkbox{
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
 }
-form .content input{
-  width: 15px;
-  height: 15px;
-  background: red;
-}
-form .content label{
-  color: #262626;
-  user-select: none;
-  padding-left: 5px;
-}
-form .content .pass-link{
-  color: "";
-}
-form .field input[type="submit"]{
-  color: #fff;
-  border: none;
-  padding-left: 0;
-  margin-top: 5px;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
-  background: crimson;
-  transition: all 0.3s ease;
 
-}
-form .field input[type="submit"]:active{
-  transform: scale(0.95);
-}
-form .signup-link{
-  color: #262626;
-  margin-top: 20px;
+.catagory-box{
+  max-width: 33.33%;
+  padding: 10px;
   text-align: center;
-}
-form .pass-link a,
-form .signup-link a{
-  color: crimson;
-  text-decoration: none;
-}
-form .pass-link a:hover,
-form .signup-link a:hover{
-  text-decoration: underline;
+  color: #ddd;
+  cursor: pointer;
 }
 
+.catagory-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #fff;
+  color: crimson;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.catagory-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.catagory-box:hover .catagory-icon{
+  background: crimson;
+  color: #ddd;
+}
+.catagory-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.catagory-desc{
+  font-size: 14px;
+}
 
 
 
@@ -335,5 +270,26 @@ form .signup-link a:hover{
   }
   #check:checked ~ ul{
     left: 0;
+  }
+}
+
+
+
+
+@media screen and (max-width:960px) {
+  .catagory-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .catagory-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .catagory-box{
+    max-width: 100%;
   }
 }
