@@ -1,152 +1,133 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <title>Bookmark - Home </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">Bookmark.</label>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="catagory.html">Catagory</a></li>
-        <div class="nav-btn">
-          <a href="login.html">Login</a>
-          <a href="login.html">SignUp</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarks Manager</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="./index.html"
+              ><span class="golden-color rgb-switcher"
+                >Bookmark Manager</span
+              ></a
+            >
+          </div>
+          <ul class="menu">
+            <li><a href="./index.html" class="menu-button">Home</a></li>
+            <li>
+              <a href="./bookmarks.html" class="menu-button">Bookmarks</a>
+            </li>
+            <li>
+              <a href="./categories.html" class="menu-button">Categories</a>
+            </li>
+            <li>
+              <a href="./import-export.html" class="menu-button"
+                >Import/Export</a
+              >
+            </li>
+            <li>
+              <a href="./login.html" class="menu-button">Login/Register</a>
+            </li>
+          </ul>
         </div>
-      </ul>
-    </nav>
-  </header>
-  <!-- Banner -->
-  <section class="home">
-    <div class="max-width">
-      <div class="home-content">
-        <div class="text-1">Import Every Content in</div>
-        <div class="text-2">One Place </div>
-        <div class="button-aside">
-          <div class="read-more">
-            <a href="#create-bm-1"> Create a Bookmark </a>
-            <a href="#create-bm-2"> Export a Bookmark </a>
+      </div>
+    </header>
+
+    <!-- hero  -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="welcome-message">
+            Welcome <span class="extra">John Doe</span>
+            <div class="login-signup-prompt">
+              <a href="./login.html"><div class="button">Log In</div></a>
+              <a href="./signup.html"><div class="button">Sign Up</div></a>
+            </div>
           </div>
-          <div class="delabook">
-
-            <a href="#create-bm-3"> Delete a Bookmark </a>
+          <div class="my-categories-button">
+            <a href="./categories.html"
+              ><div class="button">My Categories</div></a
+            >
+            <a href="./bookmarks.html"
+              ><div class="button">My Bookmarks</div></a
+            >
           </div>
-  </section>
-  <!-- content -->
-  <div class="container">
-    <section class="create-bm" id="create-bm-1"
-      style="background-image: url(img/import.jpg); background-size: cover;background-repeat: no-repeat;background-attachment: fixed; height: 100vh; width: 100%;">
-      <div class="max-width">
-        <center>
-          <div class="create-content">
-            <h2 class="title"> Create Bookmark</h2>
-            <div class="create-bm1-1">
-              <div class="wrapper">
-                <div class="title">
-                  Create Bookmark</div>
-                <form action="#">
-                  <div class="field">
-                    <input type="text" required>
-                    <label>Enter the Category</label>
-                  </div>
-                  <div class="field">
-                    <input type="text" required>
-                    <label>Enter the link</label>
-                  </div>
-                  <div class="content">
-
-                    <div class="field">
-                      <input type="submit" value="Create">
-                    </div>
-
-                </form>
-              </div>
-
-            </div>
-        </center>
+          <div class="add-bookmarks-and-categories">
+            <a href="./add-bookmark.html"
+              ><div class="button">Add a Bookmark</div></a
+            >
+            <a href="./add-category.html"
+              ><div class="button">Add a Category</div></a
+            >
+          </div>
+          <div class="import-export">
+            <a href="#"><div class="button">Import Bookmarks</div></a>
+            <a href="#"><div class="button">Export Bookmarks</div></a>
+          </div>
+        </div>
       </div>
     </section>
 
-
-    <section class="create-bm" id="create-bm-2"
-      style="background-image: url(img/export.jpg); background-size: cover;background-repeat: no-repeat;background-attachment: fixed;  height: 100vh; width: 100%;">
-      <div class="max-width">
-        <center>
-          <div class="create-content">
-            <h2 class="title"> Export a Bookmark</h2>
-            <div class="create-bm-2">
-              <div class="wrapper">
-                <div class="title">
-                  Export a Bookmark</div>
-                <form action="#">
-                  <div class="field">
-                    <input type="text" required>
-                    <label>Enter the Category</label>
-                  </div>
-                  <div class="field">
-                    <input type="text" required>
-                    <label>Enter the link</label>
-                  </div>
-                  <div class="content">
-
-                    <div class="field">
-                      <input type="submit" value="Export">
-                    </div>
-
-                </form>
-              </div>
-
+    <!-- footer section -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="info">
+            <div class="about-us">
+              <p class="title">About the Project</p>
+              <p class="about-info">
+                Bookmarks Manager is a Web Application created using the
+                currently trending MERN Stack where frontend development is done
+                using React (R), database using MongoDB (M), and backend using
+                Express.js (E) and Node.js (N), collectively making the MERN
+                stack. In this app, users can create their own account, save
+                bookmarks in a cattegorized format, and import and export
+                bookmarks to and fro.
+              </p>
             </div>
-        </center>
-      </div>
-    </section>
-    <section class="create-bm" id="create-bm-3"
-      style="background-image: url(img/delete.jpg); background-size: cover;background-repeat: no-repeat;background-attachment: fixed;  height: 100vh; width: 100%;">
-      <div class="max-width">
-        <center>
-          <div class="create-content">
-            <h2 class="title"> Delete a Bookmark</h2>
-            <div class="create-bm-3">
-              <div class="wrapper">
-                <div class="title">
-                  Delete a Bookmark</div>
-                <form action="#">
-                  <div class="field">
-                    <input type="text" required>
-                    <label>Enter the Category</label>
-                  </div>
-                  <div class="field">
-                    <input type="text" required>
-                    <label>Enter the link</label>
-                  </div>
-                  <div class="content">
-
-                    <div class="field">
-                      <input type="submit" value="Delete">
-                    </div>
-
-                </form>
-              </div>
-
+            <div class="members">
+              <p class="title">Project Members</p>
+              <ul>
+                <li>
+                  <strong>Project Manager</strong
+                  >:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sahaja Phuyal
+                </li>
+                <li>
+                  <strong>Business Analyst</strong
+                  >:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bishistha Barma
+                </li>
+                <li>
+                  <strong>Frontend Developer</strong>:&nbsp; Ganesh Acharya
+                </li>
+                <li>
+                  <strong>Backend Developer</strong>:&nbsp;&nbsp; Pranav
+                  Shrestha
+                </li>
+                <li>
+                  <strong>Backend Developer</strong>:&nbsp;&nbsp; Ujjal Khadka
+                </li>
+              </ul>
             </div>
-        </center>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="copyright-bar">
+            <p>
+              <span>Bookmark Manager App</span> &copy; 2021 - All Rights
+              Reserved
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </footer>
 
-  </div>
-
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>
