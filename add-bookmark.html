@@ -38,39 +38,46 @@
       </div>
     </header>
 
-    <!-- signup section -->
-    <section class="login-signup-section">
-      <div class="login-signup-container">
-        <div class="login-signup-content">
-          <div class="main-section">
-            <p class="title">Log In</p>
-            <form class="login-signup-form">
+    <!-- add a bookmark section -->
+    <section class="add-section">
+      <div class="add-container">
+        <div class="add-content">
+          <div class="add-bookmark-section">
+            <p class="title">Add a Bookmark</p>
+            <form class="add-bookmark-form">
               <div class="form-field">
-                <label for="signup-username">Username</label>
+                <label for="add-bookmark-name">Name</label>
                 <input
-                  id="signup-username"
+                  id="add-bookmark-name"
                   type="text"
-                  placeholder="Enter the Username"
+                  placeholder="Enter the Name"
                 />
               </div>
               <div class="form-field">
-                <label for="signup-password">Password</label>
+                <label for="add-bookmark-link">Link</label>
                 <input
-                  id="signup-password"
-                  type="password"
-                  placeholder="Enter the Password"
+                  id="add-bookmark-link"
+                  type="text"
+                  placeholder="Enter the Link"
                 />
               </div>
-
               <div class="form-field">
-                <a href="#"><div class="button">Log In</div></a>
+                <label for="add-bookmark-category">Category</label>
+                <select id="add-bookmark-category">
+                  <option class="option" value="misc">misc</option>
+                  <option class="option" value="padhai">padhai</option>
+                </select>
+              </div>
+              <div class="form-field save-cancel">
+                <a href="#"><div class="button">Save</div></a>
+
+                <a href="#"><div class="button">Cancel</div></a>
               </div>
 
               <div class="form-field">
-                <p class="prompt-message">Not registered yet?</p>
-                <a href="./signup.html"
-                  ><div class="button last second-last">Sign Up</div>
-                </a>
+                <a href="./add-category.html"
+                  ><div class="button last second-last">Add a Category</div></a
+                >
               </div>
 
               <div class="form-field">
