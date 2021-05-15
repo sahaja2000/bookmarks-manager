@@ -1,0 +1,144 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarks Manager</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="#"
+              ><span class="goledn-color rgb-switcher"
+                >Bookmark Manager</span
+              ></a
+            >
+          </div>
+          <ul class="menu">
+            <li><a href="./index.html" class="menu-button">Home</a></li>
+            <li>
+              <a href="./categories.html" class="menu-button"
+                >Bookmarks & Categories</a
+              >
+            </li>
+            <li>
+              <a href="./import-export.html" class="menu-button"
+                >Import/Export</a
+              >
+            </li>
+            <li>
+              <a href="./login.html" class="menu-button">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- add a category section -->
+    <section class="add-section">
+      <div class="add-container">
+        <div class="add-content">
+          <div class="add-bookmark-section">
+            <p class="title">Export a Bookmark</p>
+            <form class="add-bookmark-form">
+              <div class="form-field">
+                <label for="add-category-name"> Bookmark Link</label>
+                <input
+                  id="add-category-name"
+                  type="text"
+                  placeholder="Enter the Name"
+                />
+              </div>
+
+              <div class="form-field">
+                <div class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="add-category-privacy"
+                    value="isPrivate"
+                  />
+                  <label for="add-category-privacy">Generate a html file?</label>
+                </div>
+              </div>
+              <div class="form-field save-cancel">
+                <a href="#"><div class="button">Sure</div></a>
+
+                <a href="#"><div class="button">Cancel</div></a>
+              </div>
+
+              <div class="form-field">
+                <a href="#"
+                  ><div class="button last second-last">Export a bookmark from browser </div></a
+                >
+              </div>
+
+              <div class="form-field">
+                <a href="./import-export.html"><div class="button last">Go Back</div></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="info">
+            <div class="about-us">
+              <p class="title">About The Project</p>
+              <p class="about-info">
+                Bookmarks Manager is a Web Application created using the
+                currently trending MERN Stack where frontend development is done
+                using React (R), database using MongoDB (M), and backend using
+                Express.js (E) and Node.js (N), collectively making the MERN
+                stack. In this app, users can create their own account, save
+                bookmarks in a cattegorized format, and import and export
+                bookmarks to and fro.
+              </p>
+            </div>
+            <div class="members">
+              <p class="title">Project Members</p>
+              <ul>
+                <li>
+                  <strong>Project Manager</strong
+                  >:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sahaja Phuyal
+                </li>
+                <li>
+                  <strong>Business Analyst</strong
+                  >:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bishistha Barma
+                </li>
+                <li>
+                  <strong>Frontend Developer</strong>:&nbsp; Ganesh Acharya
+                </li>
+                <li>
+                  <strong>Backend Developer</strong>:&nbsp;&nbsp; Pranav
+                  Shrestha
+                </li>
+                <li>
+                  <strong>Backend Developer</strong>:&nbsp;&nbsp; Ujjal Khadka
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="copyright-bar">
+            <p>
+              <span>Bookmark Manager App</span> &copy; 2021 - All Rights
+              Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
